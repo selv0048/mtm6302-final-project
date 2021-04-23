@@ -27,6 +27,9 @@ h1,h3,#settings,#greeting{
 	color: white;
 	padding-top: 1rem;
 }
+h1{
+	font-size: 4rem;
+}
 
 #rightPanel{
 		margin-top: 0
