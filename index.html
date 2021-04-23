@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="style.css" rel='stylesheet'>
+
+</head>
+<body>
+
+	<img>
+	<div class='row topPanel'>
+		<div class='row'>
+			<div class='col' id="rightPanel">
+				<div class="rightPanel" >
+				    <h1>Settings</h1>
+					<h3>Hour Clock</h3>
+					<div class="btn-group" role="group" id="hourRadio">
+						<input type="radio" class="btn-check" name="hourValue" value=true id="btnradio1" >
+						<label class="btn btn-outline-light" for="btnradio1">Yes</label>
+
+						<input type="radio" class="btn-check" name="hourValue" value=false id="btnradio2">
+						<label class="btn btn-outline-light" for="btnradio2">No</label>
+					</div>
+					<h3>Show Seconds</h3>
+					<div class="btn-group" role="group" id="secRadio">
+						<input type="radio" class="btn-check" name="secValue" value=true id="btnradio3" >
+						<label class="btn btn-outline-light" for="btnradio3">Yes</label>
+
+						<input type="radio" class="btn-check" name="secValue" value=false id="btnradio4" >
+						<label class="btn btn-outline-light" for="btnradio4">No</label>
+					</div>
+					<h3>Show Date</h3>
+					<div class="btn-group" role="group" id="dateRadio">
+						<input type="radio" class="btn-check" name="dateValue" value=true id="btnradio5" >
+						<label class="btn btn-outline-light" for="btnradio5">Yes</label>
+
+						<input type="radio" class="btn-check" name="dateValue" value=false id="btnradio6">
+						<label class="btn btn-outline-light" for="btnradio6">No</label>
+					</div>
+		      	</div>		
+			</div>
+			<div class='col-10'>
+				<div>
+					<div class='row'>
+						<div class='col buttonspace'>
+							<button class="btn" id="settings"><i class="fa fa-cog"></i></button>
+						</div>			
+					</div>
+					<div class='row'>
+						<div class="col" id="greeting">
+							<h1>greeting section</h1>
+						</div>				
+					</div>
+					<div class='row'>
+						<div class="time" >
+							<h1 id="time">00:00:00</h1>
+						</div>
+					</div>
+
+					<div class='row'>
+						<div class='col buttonspace'>
+							<button class='btn btn-light' id='more' type="button">More Data</button>				
+						</div>
+					</div>
+					<br>
+					<br>
+						<div class="bottom" id='bottomPanel'>
+							<div>
+								<div class='col'> Day of the Week:</div>
+								<div class='col' id="dayOfWeek">Day of week</div>
+								
+							</div>
+							<div>
+								<div class='col'> Day of the Month:</div>
+								<div class='col' id="dayOfMonth">Day of month</div>
+							</div>
+						</div>
+					</div>
+				
+			</div>    
+		
+		</div>
+	</div>
+
+
+    <script src='script.js'></script>
+</body>
+</html>
+
