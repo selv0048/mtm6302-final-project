@@ -58,6 +58,8 @@ h1,h3,#settings,#greeting{
     margin: 0;
     overflow: hidden;
     bottom:0;
+	display: hide;
+
 }
 .bottom.close {
   	top:  100%;
@@ -65,9 +67,10 @@ h1,h3,#settings,#greeting{
 }
 
 
-#bottomPanel.bottom{
+.bottomP{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
+
 
 }
 
