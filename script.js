@@ -213,3 +213,4 @@ function setInStorage(){
 	const storageObj = settingsObj
 	localStorage.setItem(STORAGE_KEY, JSON.stringify(storageObj))
 }
+
